@@ -7,11 +7,8 @@ app = QApplication([])
 window = QWidget()
 
 button1 = QRadioButton('6')
-
 button2 = QRadioButton('3')
-
 button3 = QRadioButton('2')
-
 button4 = QRadioButton('8')
 
 
@@ -20,17 +17,12 @@ Poslednee = QMessageBox()
 line1 = QHBoxLayout()
 line2 = QHBoxLayout()
 
-
 line1.addWidget(button1, alignment = Qt.AlignCenter)
 line1.addWidget(button2, alignment = Qt.AlignCenter)
-
-
 line2.addWidget(button3, alignment = Qt.AlignCenter)
-line2.addWidget(button4, alignment = Qt.AlignCenter)
-
+line2.addWidget(button4, alignment = Qt.AlignCenter
 
 v_line = QVBoxLayout()
-
 v_line.addLayout(line1)
 v_line.addLayout(line2)
 
@@ -41,7 +33,6 @@ vopros = QLabel("Сколько материков на земле?")
 knopka = QPushButton("Ответить")
 
 v_line1 = QVBoxLayout()
-
 v_line1.addWidget(vopros, alignment = Qt.AlignCenter)
 v_line1.addWidget(RadioGroupBox , alignment = Qt.AlignCenter)
 v_line1.addWidget(knopka, alignment = Qt.AlignCenter)
@@ -68,7 +59,7 @@ v_line_1.addLayout(H_line_2)
 
 
 class Question():
-    def __init__(self, question, right_answer, wrong1, wrong2,wrong3):
+    def __init__(self, question, right_answer, wrong1, wrong2, wrong3):
         self.question = question
         self.right_answer = right_answer
         self.wrong1 = wrong1
@@ -77,8 +68,8 @@ class Question():
 
 
 question_list = []
-question_list.append(Question('Сколько материков на земле?', '6','3','2','8'))
-question_list.append(Question('Какой язык Германии?','Немецкий','Испанский','Белорусский', 'Армянский'))
+question_list.append(Question('Сколько материков на земле?', '6', '3', '2', '8'))
+question_list.append(Question('Какой язык Германии?', 'Немецкий', 'Испанский', 'Белорусский', 'Армянский'))
 
 
 RadioGroup = QButtonGroup()
@@ -158,3 +149,4 @@ app.exec_()
 
 
 1
+
